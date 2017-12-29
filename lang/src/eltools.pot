@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-04 02:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/motor.c:165
+msgid ""
+" where power - engine power (default voltage=0.38, cos=0.9 ece=0.95, "
+"mode=ac3)\n"
+msgstr ""
+
+#: src/motor.c:164
+#, c-format
+msgid "%s value\n"
+msgstr ""
+
+#: src/motor.c:110
+#, c-format
+msgid "Error! Illegal use of options\n"
+msgstr ""
+
+#: src/motor.c:114
+#, c-format
+msgid "Error! Missing value from option!\n"
+msgstr ""
+
+#: src/motor.c:23
+#, c-format
+msgid "Invalid value %s\n"
+msgstr ""
+
+#: src/motor.c:27
+#, c-format
+msgid "Missing paraneter '%s'"
+msgstr ""
+
+#: src/motor.c:118
+#, c-format
+msgid "Unknown option '%s'\n"
+msgstr ""
+
+#: src/motor.c:154
+#, c-format
+msgid "Usage %s %s\n"
+msgstr ""
+
+#: src/motor.c:155
+msgid ""
+"where:\n"
+" mode - mode. DC for D.C.,  AC for single-phase alternating current, AC3 for "
+"three-phase alternating current;\n"
+" voltage - motor voltage;\n"
+" power - engine power;\n"
+" cos - power factor;\n"
+" ece - energy conversion efficiency,\n"
+"or:\n"
+msgstr ""

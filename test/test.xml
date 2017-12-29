@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<system  ul="400" sscc="200000">
+  <transformer   schema="yy" sn="1000" pk="11.2" ul="0.4">
+    <bus  r="0.03" x="0.014" R0="0.037" X0="0.042" len="10">
+      <resist  R="0.013">
+	<resist  R="5.6">
+	  <commutator name="point" R="0.14" X="0.08">
+	  </commutator>
+	</resist>
+      </resist>
+    </bus>
+    <resist R="0.0">
+      <commutator R="0.0" X="0.0">
+	<resist R="0.0" name="posttrans">
+	</resist>
+      </commutator>
+    </resist>
+  </transformer>
+</system>

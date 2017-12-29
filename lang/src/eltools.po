@@ -1,0 +1,203 @@
+# Russian translations for PACKAGE package.
+# Copyright (C) 2017 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# igor <tyukalov@bk.ru>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-29 02:25+0300\n"
+"PO-Revision-Date: 2017-12-04 02:19+0300\n"
+"Last-Translator: igor <tyukalov@bk.ru>\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/motor.c:163
+msgid ""
+" where power - engine power (default voltage=0.38, cos=0.9 ece=0.95, "
+"mode=ac3)\n"
+msgstr ""
+" где power - мощность двигателя в кВт (по умолчанию напряжение 0.38 кВ, "
+"косинус - 0.9, КПД - 0.95,  mode - ac3)\n"
+
+#: src/motor.c:162
+#, c-format
+msgid "%s power\n"
+msgstr ""
+
+#: src/scc/scc.c:125
+msgid "Error reading the file\n"
+msgstr "Ошибка чтения файла!\n"
+
+#: src/motor.c:108
+#, c-format
+msgid "Error! Illegal use of options\n"
+msgstr "Ошибка! Неправильное использование опции!\n"
+
+#: src/motor.c:110
+#, c-format
+msgid "Error! Missing value from option!\n"
+msgstr "Ошибка! Требуется указать значение для опции\n"
+
+#: src/scc/scc.c:135
+msgid "Error! Zero impedance\n"
+msgstr "Ошибка! Расчётное сопротивление равно нулю!\n"
+
+#: src/om.c:138
+msgid "Incorrect combinations of modes\n"
+msgstr "Неправильная комбинация режимов\n"
+
+#: src/motor.c:133
+msgid "Incorrect data!\n"
+msgstr "Некорректные данные!\n"
+
+#: src/scc/scc.c:114
+#, c-format
+msgid "Incorrect voltage value - '%s'\n"
+msgstr "Некорректное значение напряжения - '%s'\n"
+
+#: src/om.c:72 src/scc/scc.c:78
+#, c-format
+msgid "Invalid argument!\n"
+msgstr "Некорректная опция\n"
+
+#: src/om.c:142
+msgid "Invalid request\n"
+msgstr "Некорректный запрос\n"
+
+#: src/om.c:96
+msgid "Invalid value for -i\n"
+msgstr "Неправильное значение для -i\n"
+
+#: src/om.c:118
+msgid "Invalid value for -r\n"
+msgstr "Неправильное значение для -r\n"
+
+#: src/om.c:106
+msgid "Invalid value for -u\n"
+msgstr "Неправильное значение для -u\n"
+
+#: src/om.c:127
+msgid "Invalid value for -x\n"
+msgstr "Неправильное значение для -x\n"
+
+#: src/motor.c:172 src/om.c:187 src/scc/scc.c:177
+msgid ""
+"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>.\n"
+"Written by Igor 'sp_r00t' Tyukalov.\n"
+msgstr ""
+"Лицензия GPLv3+: CNU GPL версии 3 или последующей <http://gnu.org/licenses/"
+"gpl.html>.\n"
+"Автор программы - Игорь 'sp_r00t' Тюкалов.\n"
+
+#: src/scc/scc.c:145
+#, c-format
+msgid "Point '%s' not found\n"
+msgstr "Расчётная точка '%s' не найдена\n"
+
+#: src/scc/scc.c:93 src/scc/scc.c:152
+msgid "Too few arguments\n"
+msgstr "Слишком мало аргументов\n"
+
+#: src/om.c:146
+msgid "Unknown error\n"
+msgstr "Неизвестная ошибка\n"
+
+#: src/scc/scc.c:105
+#, c-format
+msgid "Unknown mode - '%s'\n"
+msgstr "Неизвестная режим - %s\n"
+
+#: src/motor.c:112
+#, c-format
+msgid "Unknown option '%s'\n"
+msgstr "Неизвестная опция %s\n"
+
+#: src/motor.c:152 src/om.c:170
+#, c-format
+msgid "Usage %s %s\n"
+msgstr "Используйте: %s %s\n"
+
+#: src/scc/scc.c:161
+#, c-format
+msgid ""
+"Usage: %s [options] filename points...\n"
+"Where:\n"
+msgstr ""
+"Используйте: %s [options] filename points...\n"
+"Где:\n"
+
+#: src/om.c:67
+msgid "Wrong number of arguments\n"
+msgstr "Неправильное число аргументов\n"
+
+#: src/scc/scc.c:163
+msgid ""
+"m - mode. Takes on values:\n"
+"    1 - single-phase mode;\n"
+"    2 - two-phase mode;\n"
+"    3 - three-phase mode.\n"
+"u - voltage, V;\n"
+"filename - network file;\n"
+"points - points of calculation of short-circuit currents.\n"
+msgstr ""
+"m - режим КЗ. Принимает следующие значения :\n"
+"    1 - однофазный режим;\n"
+"    2 - двухфазный режим;\n"
+"    3 - трёхфазный режим.\n"
+"u - напряжение, В;\n"
+"filename - файл с описанием сети (смю Документацию);\n"
+"points - точки для расчёта токов КЗ.\n"
+
+#: src/om.c:171
+msgid ""
+"where:\n"
+" -h or --help - print help\n"
+" -v or --version - print version\n"
+" -p - mode. With the option - single-phase, in the absence of - three-phase\n"
+" -d - type of current. With the option - DC, in the absence of - AC\n"
+" -i - amperage,\n"
+" -u - voltage,\n"
+" -r - resistance,\n"
+" -x - reactance,\n"
+" "
+msgstr ""
+"где:\n"
+" -h or --help - показать справку\n"
+" -v or --version - показать версию\n"
+" -p -  режим. Однофазный в случае наличии опции и трёхфазный в случае "
+"отсутствия\n"
+" -d - род тока. Постоянный в случае наличия опции и переменный в случае "
+"отсутствия\n"
+" -i - сила тока,\n"
+" -u - напряжение,\n"
+" -r - активное сопротивление,\n"
+" -x - реактивное сопротивление,\n"
+" "
+
+#: src/motor.c:153
+msgid ""
+"where:\n"
+" mode - mode. 'dc' for D.C.,  'ac' for single-phase alternating current, "
+"'ac3' for three-phase alternating current;\n"
+" voltage - motor voltage;\n"
+" power - engine power;\n"
+" cos - power factor;\n"
+" ece - energy conversion efficiency,\n"
+"or:\n"
+msgstr ""
+"где:\n"
+" mode - режим. 'dc' для постоянного тока, 'ac' для переменного однофазного, "
+"'ac3' для  трехфазного;\n"
+" voltage - напряжение двигателя, кВ;\n"
+" power - мощность двигателя, кВт;\n"
+" cos - коэффициент мощности;\n"
+" ece - КПД; \n"
+" или:\n"

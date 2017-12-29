@@ -1,0 +1,246 @@
+
+src/motor.c,337
+#define PROGNAME 21,810
+#define VERSION 22,835
+#define INITMOTOR(23,858
+  AC,33,1378
+  AC3,34,1384
+  DC,35,1391
+} modes;36,1397
+  modes mode;40,1424
+  double voltage;41,1438
+  double power;42,1456
+  double cos;43,1472
+  double kpd;44,1486
+} MOTOR;45,1500
+main 52,1597
+calculation(143,3478
+help(150,3640
+version(169,4174
+
+src/libom.c,36
+#define OM_BREAK(21,822
+om(28,989
+
+src/vl380.c,556
+#define NUMBER_OF_VALUES	23,891
+#define VALUESIZE	24,919
+#define DELIMITER	25,941
+#define MAX_STR_SIZE	26,965
+typedef enum{INVALID_ARGS=INVALID_ARGS28,994
+typedef enum{INVALID_ARGS=0, ERROR,28,994
+typedef enum{INVALID_ARGS=0, ERROR, DB_ERROR,28,994
+typedef enum{INVALID_ARGS=0, ERROR, DB_ERROR, NF_ERROR}NF_ERROR28,994
+typedef enum{INVALID_ARGS=0, ERROR, DB_ERROR, NF_ERROR} err;28,994
+const char *errors[errors29,1056
+main(40,1497
+errarg(60,1852
+getvalue(68,2100
+calculate(107,3016
+asfilter(118,3231
+dialog(155,4133
+normalize(188,5055
+
+src/om.c,162
+#define NUMOPT	21,835
+#define FZERO	22,879
+#define VERSION 23,898
+#define PROGNAME 24,922
+main 32,1061
+FindOption(153,4089
+help(167,4336
+version(183,4785
+
+src/scc/scc.c,134
+#define NUMOPT 24,908
+#define PROGNAME 25,925
+#define VERSION 26,948
+main 37,1225
+help(146,3807
+version(161,4163
+calc(170,4398
+
+src/scc/xmlinit.h,488
+#define HIGH_VOLTAGE 22,780
+#define LOW_VOLTAGE 23,809
+#define SC_CURRENT 26,860
+#define SC_POWER 27,895
+#define SC_BREAKER 28,933
+#define SCHEMA 31,993
+#define SC_VOLTAGE 32,1063
+#define NOM_POWER 33,1107
+#define SC_POWERLOSS 34,1153
+#define DEFAULT_UK 35,1196
+#define DEFAULT_PK 36,1229
+#define BUS_RES 39,1283
+#define BUS_REACT 40,1333
+#define R_POWERLOSS 43,1402
+#define R_CURRENT 44,1447
+#define R_INDUCTANCE 45,1492
+#define R_MINDUCTANCE 46,1533
+#define W 47,1571
+
+src/scc/xmlinit.c,343
+#define PRINTD 23,865
+#define ALLOC_NODE 24,908
+#define SCANMAC(25,973
+#define VALIDATOR(26,1020
+#define GETPROPMAC(27,1083
+#define DEFAULT_INIT(28,1139
+netInit 48,1891
+initNode(71,2501
+initElement(120,3862
+initSystem(152,4986
+initTransformer(186,6114
+initBus(225,7519
+initLine(245,8138
+initResist(266,8788
+initReactor(275,9001
+
+src/scc/libnet.c,67
+netFindCircuit 27,898
+getNodePoint 48,1438
+getImpedance 60,1661
+
+include/el.h,833
+#define EL_PACKAGE 29,908
+#define EL_SPACE	30,942
+#define EL_TRUE	31,964
+#define EL_FALSE	32,985
+#define STREQ(34,1008
+  #define _(36,1068
+  #define INIT_LOCALE 37,1094
+  #define _(42,1337
+#define FERROR(45,1362
+#define MISSINGOPT(49,1535
+#define MODE_MASK(56,1759
+#define RESULT_MASK(57,1814
+#define PHASE_MASK(58,1887
+#define TRADICAL 59,1949
+enum emode 61,1977
+  OM_AC_MODE 62,1990
+  OM_DC_MODE 63,2023
+  OM_ONE_PHASE 64,2056
+  OM_THREE_PHASE 65,2089
+  OM_I_RESULT 66,2122
+  OM_U_RESULT 67,2155
+  OM_R_RESULT 68,2188
+enum err 71,2225
+  OM_NORMAL,72,2236
+  OM_INVALID_COMBINATION_MODES,73,2249
+  OM_INVALID_REQUEST,74,2281
+  int		        mode;78,2324
+  double		voltage;79,2345
+  double		amperage;80,2364
+  double		resistance;81,2384
+  double		reactance;82,2406
+} OM_ARGS, *POM_ARGS;POM_ARGS83,2427
+
+include/argparser.h,1238
+#define MAX_OPTION_SIZE 18,753
+#define AP_SPACE	19,804
+#define TRUE	20,846
+#define FALSE	21,892
+#define VALIDATOR(23,941
+#define INITOPT 28,1170
+#define INITARG 29,1221
+#define INIT(31,1280
+  AP_NORMAL 45,2028
+  AP_ILLEGAL_USE_OPTIONS 46,2047
+  AP_MISSING_VALUE,47,2075
+  AP_UNKNOWN_OPTION,48,2096
+  AP_MEMORY_ERROR,49,2118
+} errcode;50,2138
+  AP_NONE,53,2168
+  AP_REQUIRED,54,2180
+  AP_OPTIONAL,55,2196
+} optflag;56,2212
+  char		*options;options59,2244
+  optflag	          flag;60,2263
+} OPTIONS, *RETOPT;RETOPT61,2290
+  const char		   prefix;65,2333
+  const char		   separator;66,2359
+  int		           argc;67,2388
+  char		   **argv;argv68,2413
+  int                    len;69,2433
+  RETOPT      opts;70,2464
+}ARGPARSE_ARG;ARGPARSE_ARG71,2485
+typedef struct OPTION{OPTION73,2503
+  char   *option;option74,2527
+  char   *value;value75,2546
+  struct OPTION *next;next76,2564
+} OPTION, *POPTION;POPTION77,2588
+typedef struct ARGUMENTS{ARGUMENTS79,2611
+  char   *argument;argument80,2638
+  struct ARGUMENTS *next;next81,2659
+} ARGUMENTS, *PARGUMENTS;PARGUMENTS82,2686
+  errcode   result;85,2732
+  int erropt;86,2753
+  POPTION   opt;87,2768
+  PARGUMENTS   arg;88,2786
+} OPTARG;89,2807
+
+include/om.h,578
+#define MODE_MASK(18,749
+#define RESULT_MASK(19,805
+#define PHASE_MASK(20,879
+#define TRADICAL 21,942
+enum emode 23,972
+  OM_AC_MODE 24,986
+  OM_DC_MODE 25,1020
+  OM_ONE_PHASE 26,1054
+  OM_THREE_PHASE 27,1088
+  OM_I_RESULT 28,1122
+  OM_U_RESULT 29,1156
+  OM_R_RESULT 30,1190
+enum err 33,1230
+  OM_NORMAL,34,1242
+  OM_INVALID_COMBINATION_MODES,35,1256
+  OM_INVALID_REQUEST,36,1289
+  int		        mode;40,1336
+  double		voltage;41,1358
+  double		amperage;42,1378
+  double		resistance;43,1399
+  double		reactance;44,1422
+} OM_ARGS, *POM_ARGS;POM_ARGS45,1444
+
+include/net.h,889
+typedef struct netNode 18,741
+  char *point;point19,766
+  double resistance;20,781
+  double reactance;21,802
+  double zresistance;22,822
+  double zreactance;23,844
+  struct netNode *parent;parent24,865
+  struct netNode *child;child25,891
+  struct netNode *next;next26,916
+} *netNodePtr;netNodePtr27,940
+typedef struct netCircuit{netCircuit30,957
+  netNodePtr node;31,984
+  struct netCircuit *next;next32,1003
+} *netCircuitPtr;netCircuitPtr33,1030
+typedef struct netPoints{netPoints35,1049
+  char *point;point36,1075
+  netNodePtr node;37,1090
+  struct netPoints *next;next38,1109
+} *netPointsPtr;netPointsPtr39,1135
+typedef struct netNetwork{netNetwork41,1153
+  netPointsPtr points;42,1180
+  netNodePtr network;43,1203
+} *netNetworkPtr;netNetworkPtr44,1225
+  NET_ONE_PHASE 47,1261
+  NET_TWO_PHASE,48,1282
+  NET_THREE_PHASE,49,1299
+} netMode;50,1318
+
+include/csvdblt.h,241
+#define SPACE	21,765
+#define DQUOTE	22,785
+#define TRUE	23,806
+#define FALSE	24,825
+#define MAX_STRING_SIZE	25,845
+	FILE* 	fd;27,893
+	char	delimiter;28,906
+} *CSVD;CSVD29,924
+#define NOT_FOUND	32,955
+#define DATABASE_ERROR	33,978
